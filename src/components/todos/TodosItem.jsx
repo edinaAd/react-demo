@@ -1,9 +1,9 @@
 
-const TodosItem = () => {
+const TodosItem = (props) => {
     return <li>
 
-    <div>img</div>
-    <h3>qedwd</h3>
+    <div>{props.title}</div>
+    <h3>{props.description}</h3>
     </li>
 }
 export default TodosItem;
