@@ -1,8 +1,9 @@
 import TodosItem from "./TodosItem";
+import classes from './TodosList.module.css';
 
 const TodosList = (props) => {
   return (
-    <ul>
+    <ul className={classes.list}>
       {props.todos.map((todo) => (
         <TodosItem
           key={todo.id}
