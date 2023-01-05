@@ -8,6 +8,7 @@ const MainNavigation = () => {
       <ul>
           <li><Link to='/'>All Todos</Link></li>
           <li><Link to='/new-todo'>Add New Todo</Link></li>
+          <li><Link to='/scroll'>Scroll</Link></li>
 
           
       </ul>
