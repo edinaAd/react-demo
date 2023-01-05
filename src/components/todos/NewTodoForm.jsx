@@ -1,12 +1,13 @@
 import Card from "../ui/Card";
 import classes from './NewTodoForm.module.css';
-import { useRef } from "react";
+import { useRef} from "react";
 
 const NewTodoForm = (props) => {
-  
+ 
+
   const titleInput = useRef();
   const descriptionInput = useRef();
-
+  
   const submitHandler = (event) => {
     event.preventDefault();
 
@@ -20,13 +21,13 @@ const NewTodoForm = (props) => {
 
     props.onAddTodo(todoData);
     console.log(enteredTitle, enteredDescription);
-   
-
+  
 
   }
 
   return (
     <Card>
+    
       <form className={classes.form} onSubmit={submitHandler}>
         <div className={classes.control}>
           <label htmlFor="title">Todo Title</label>
